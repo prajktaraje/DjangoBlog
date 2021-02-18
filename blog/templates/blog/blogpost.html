@@ -1,0 +1,62 @@
+{% extends 'blog/basic.html' %} {% block title%}BLOG | BlogPost {%endblock title%} {%block blogactive%} active {%endblock blogactive%} {% block body %}
+<div class="container mx-4 mx-5">
+    <div class="row mt-4">
+        <div class="col-md-8 blog-main">
+            <h3 class="font-italic">
+                {{post.title}}
+            </h3>
+
+
+
+            <div class="blog-post px-5 mx-5">
+                <h2 class="blog-post-title">{{post.head0}}</h2>
+
+                <p class="blog-post-meta mb-5">{{post.pub_date}} {{post.auth}}</p>
+
+                <p class="blog-post-meta mb-5">{{post.chead0}}</p>
+                <h2>{{post.head1}}</h2>
+                <p class="blog-post-meta mb-5">{{post.chead1}}</p>
+                <h2>{{post.head2}}</h2>
+                <p class="blog-post-meta mb-5">{{post.chead2}}</p>
+                <h2>{{post.head3}}</h2>
+                <p class="blog-post-meta mb-5">{{post.chead3}}</p>
+                <h2>{{post.head4}}</h2>
+                <p class="blog-post-meta mb-5">{{post.chead4}}</p>
+                <h2>{{post.head5}}</h2>
+                <p class="blog-post-meta mb-5">{{post.chead5}}</p>
+
+
+            </div>
+            <!-- /.blog-post -->
+
+
+
+
+        </div>
+        <!-- /.blog-main -->
+        <aside class="col-md-4 blog-sidebar  ">
+            <div class="p-4 mb-3 bg-light rounded">
+                <h4 class="font-italic">About</h4>
+                <p class="mb-0 "> <em>This website is made by Prajktaraje.You can find education technology related blogs and many more diffrent blogs. </p>
+            </div>
+
+
+
+            <div class="p-4">
+                <h4 class="font-italic">Other Website Created With DJANGO</h4>
+                <ol class="list-unstyled">
+                    <li><a href="https://foodislove.herokuapp.com/">Food Site </a></li>
+                </ol>
+            </div>
+        </aside>
+        
+        <!-- /.blog-sidebar -->
+
+    </div>
+   
+</div>
+
+
+
+
+{% endblock %}
